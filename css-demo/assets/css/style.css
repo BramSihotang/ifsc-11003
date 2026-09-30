@@ -12,11 +12,51 @@ body {
   margin: 0;
 }
 
+header.primary p.subtitle {
+    font-size: 1.3rem;
+    letter-spacing: -0.2px;
+    margin: 10px 0px 20px;
+}
+
+header.primary a {
+    color: white;
+    text-decoration: none;
+}
+
 header.primary {
-  background-color: #3b6b8b;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px black;
+    background-color: rgb(59, 107, 139);
+    color: white;
+    text-align: center;
+    text-shadow: black 1px 1px;
+    padding: 40px;
+}
+
+header.primary h1 {
+    font-size: 2.4rem;
+    margin: 0px;
+}
+
+header.primary nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 0px;
+    gap: 40px;
+}
+
+header.primary nav ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+header.primary nav ul li a {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    padding: 5px 7.5px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: orange;
 }
  
 /* Make skip link visible when keyboard users tab to it */
