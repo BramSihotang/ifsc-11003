@@ -13,6 +13,14 @@ html {
     margin: 40px auto;
 }
 
+img{
+    max-width: 100%;
+}
+
+figure{
+    margin: 0;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -69,15 +77,56 @@ header.primary nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#content h2{
+#content h2 {
     color: #3b638b;
     border-bottom: 2.5px solid #c0c0c0;
 }
 
-#content p{
+#content p {
     line-height: 1.6;
 }
- 
+
+#blog {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#blog h2 {
+    flex: 0 0 100%;
+}
+
+#blog article {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    flex: 1;
+}
+
+#blog article time, #blog figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#blog a {
+    color: #38638B;
+}
+
+aside[aria-label="Sidebar"] {
+    background-color: #172635;
+    color: #ffffff;
+    padding: 40px 0;
+    display: flex;
+}
+
+aside div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
 /* Make skip link visible when keyboard users tab to it */
 .visually-hidden:focus,
 .visually-hidden:focus-visible {
@@ -101,5 +150,9 @@ header.primary nav ul li a:hover {
         flex-direction: column;
         justify-content: space-evenly;
         gap: 5px;
+    }
+
+    #blog h2 {
+        text-align: center;
     }
 }
