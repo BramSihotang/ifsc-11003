@@ -120,11 +120,19 @@ aside[aria-label="Sidebar"] {
     display: flex;
 }
 
-aside div.container {
+aside .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+}
+
+aside .container a {
+    color: white;
+}
+
+article.widget footer {
+    display: none;
 }
 
 /* Make skip link visible when keyboard users tab to it */
