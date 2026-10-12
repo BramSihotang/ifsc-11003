@@ -91,7 +91,11 @@ header.primary nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
+    border-top: 4px double gray;
+    border-bottom: 4px double gray;
+    padding: 30px 0;
+    margin: 20px 0;
 }
 
 #blog h2 {
@@ -111,6 +115,78 @@ header.primary nav ul li a:hover {
 
 #blog a {
     color: #38638B;
+}
+
+#practice h2 {
+    color: #3b638b;
+    border-bottom: 2.5px solid #c0c0c0;
+}
+
+#practice a:link, #practice a:visited{
+  color: #3b638b;
+}
+
+#practice h3 {
+    border-left: 5px solid #3b638b;
+    padding: 7.5px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table caption {
+
+}
+
+td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+th {
+    color:white;
+    background-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:hover {
+    color: white;
+    background-color: #172635;
+}
+
+td:nth-child(n+2) {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-right {
+    float: right;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px 0 10px 20px;
+}
+
+.img-left {
+    float: left;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px 20px 10px 0;
+}
+
+.img-center {
+    display: block;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 20px auto;   
 }
 
 aside[aria-label="Sidebar"] {
@@ -133,6 +209,12 @@ aside .container a {
 
 article.widget footer {
     display: none;
+}
+
+footer.primary {
+    background-color: #3b638b;
+    padding: 5px;
+    color: white;
 }
 
 /* Make skip link visible when keyboard users tab to it */
