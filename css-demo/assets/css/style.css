@@ -137,10 +137,6 @@ table {
     border-collapse: collapse;
 }
 
-table caption {
-
-}
-
 td {
     border: 1px solid gray;
     padding: 5px;
