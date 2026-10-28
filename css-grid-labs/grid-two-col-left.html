@@ -31,13 +31,11 @@
       gap: 20px;
       max-width: 80vw;
       margin: 20px auto;
-      grid-template-columns: repeat(4, 0.25);
-      grid-template-rows: repeat(10, 0.1);
+      grid-template-columns: repeat(4, 25%);
     }
     
-    header.primary {
+    .primary {
       grid-column: 1 / span 4;
-      grid-row: 1 / 2;
     }
     
     aside {
@@ -45,20 +43,9 @@
       grid-row: 2 / 4;
     }
     
-    #content{
+    section {
       grid-column: 2 / span 3;
-      grid-row: 2 / 2;
     }
-    
-    #blog {
-      grid-column: 2 / span 3;
-      grid-row: 3 / 3;
-    }
-    
-    footer.primary {
-      grid-column: 1 / span 4;
-    }
-    
   </style>
 
 </head>
