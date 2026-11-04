@@ -1,13 +1,58 @@
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+
 main {
     display: grid;
     gap: 20px;
     max-width: 80vw;
     margin: 20px auto;
     grid-template-columns: repeat(4, 25%);
+    margin-right: 0;
+    margin-top: 0;
 }
 
 header.primary {
     text-align: center;
+    background-color: #2a3990;
+    color: white;
+    padding: 25px;
+}
+
+header.primary nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+header.primary nav ul li {
+    list-style-type: none;
+}
+
+header.primary nav ul li a {
+    border-color: #d23369;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: black;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    color: #212d74;
+    border-bottom: 1px solid black;
+}
+
+h2.navigate {
+    border-style: none;
+}
+
+h3 {
+    border-left: 5px #d23369 solid;
+    padding-left: 10px;
 }
 
 .primary {
@@ -16,15 +61,59 @@ header.primary {
 
 aside {
     grid-column: 4 / 5;
-    grid-row: 2 / 4;
+    grid-row: 1 / 5;
+    padding-left: 20px;
+    padding-right: 50px;
+    background-color: lightgray;
+    padding-top: 20px;
 }
 
-#content{
+aside nav ul {
+    padding: 0;
+}
+
+aside nav ul li {
+    list-style-type: none;
+}
+
+aside nav ul li a {
+    color: black;
+}
+
+aside nav ul li a:hover {
+    color: #d23369;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+thead {
+    color: white;
+    background-color: #212d74;
+    border: 1.5px solid #212d74;
+
+}
+
+td {
+    border: 1.5px solid #d23369;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+#current{
     grid-row: 2 / 2;
 }
 
-#blog {
-    grid-row: 3 / 4;
+#planned {
+    grid-row: 3 / 3;
+}
+
+#leftover {
+    grid-row: 4 / 4;
 }
 
 section {

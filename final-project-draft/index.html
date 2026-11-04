@@ -6,14 +6,26 @@
     <meta name="description" content="Home"/>
     <meta name="author" content="Bram Sihotang"/>
     <link href="assets/css/style.css" rel="stylesheet"/>
-    <title>Bram Sihotang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <title>Home</title>
 </head>
 
 <body>
+    <header class="primary">
+        <h1>Home Page</h1>
+        <p>My academic plans and history</p>
+        <nav class="primary">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coursework.html">AP Coursework</a></li>
+                <li><a href="#">Link 2</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header class="primary">
-            <h1>Home Page</h1>
-        </header>
         <section id="current">
             <header>
                 <h2>Current Progress</h2>
@@ -43,7 +55,6 @@
                 <li>Intro to Digital Systems</li>
                 <li>History of Civilizations 1</li>
             </ul>
-            
             <footer>Section Footer</footer>
         </section>
         <section id="planned">
@@ -57,8 +68,9 @@
                 <li>Signals and Systems</li>
                 <li>Network Analysis</li>
                 <li>Computer Engineering Lab</li>
-                <li>Applied Statistics</li>
+                <li>Applied Statistics 1</li>
             </ul>
+            <footer>Section Footer</footer>
         </section>
         <section id="leftover">
             <header>
@@ -76,7 +88,7 @@
                     <td>3</td>
                 </tr>
                 <tr>
-                    <td>Intro to Assembly</td>
+                    <td>Intro to Computer Architecture & Assembly</td>
                     <td>3</td>
                 </tr>
                 <tr>
@@ -99,12 +111,14 @@
             <footer>Section Footer</footer>
         </section>
         <aside>
-            <h2>Navigate</h2>
-            <ul>
-                <li><a href="#current">Current Progress</a></li>
-                <li><a href="#planned">Fall 2027 Plans</a></li>
-                <li><a href="#leftover">Leftover Courses</a></li>
-            </ul>
+            <h2 class="navigate">Navigate</h2>
+            <nav>
+                <ul>
+                    <li><a href="#current">Current Progress</a></li>
+                    <li><a href="#planned">Fall 2027 Plans</a></li>
+                    <li><a href="#leftover">Leftover Courses</a></li>
+                </ul>
+            </nav>
         </aside>
         <footer class="primary">Site Footer</footer>
     </main>
