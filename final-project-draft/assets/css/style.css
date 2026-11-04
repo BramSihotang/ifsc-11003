@@ -6,6 +6,10 @@ main {
     grid-template-columns: repeat(4, 25%);
 }
 
+header.primary {
+    text-align: center;
+}
+
 .primary {
     grid-column: 1 / span 4;
 }
