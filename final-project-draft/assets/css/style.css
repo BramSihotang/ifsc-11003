@@ -7,7 +7,7 @@ main {
     display: grid;
     gap: 20px;
     max-width: 80vw;
-    margin: 20px auto;
+    margin: 0 auto;
     grid-template-columns: repeat(4, 25%);
     margin-right: 0;
     margin-top: 0;
@@ -15,7 +15,7 @@ main {
 
 header.primary {
     text-align: center;
-    background-color: #2a3990;
+    background-color: #212d74;
     color: white;
     padding: 25px;
 }
@@ -42,7 +42,7 @@ header.primary nav ul li a {
 }
 
 h2 {
-    color: #212d74;
+    color: #2a3990;
     border-bottom: 1px solid black;
 }
 
@@ -91,8 +91,8 @@ table {
 
 thead {
     color: white;
-    background-color: #212d74;
-    border: 1.5px solid #212d74;
+    background-color: #2a3990;
+    border: 1.5px solid #2a3990;
 
 }
 
@@ -114,8 +114,32 @@ td:nth-child(2) {
 
 #leftover {
     grid-row: 4 / 4;
+    padding-bottom: 20px;
 }
 
 section {
     grid-column: 1 / 4;
+}
+
+footer.primary {
+    background-color: #212d74;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer.primary ul {
+    padding-left: 0;
+}
+
+footer.primary ul {
+    list-style-type: none;
+}
+
+footer.primary ul li a {
+    color: white;
+}
+
+footer.primary ul li a:hover {
+    color: #d23369;
 }
