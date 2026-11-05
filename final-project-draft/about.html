@@ -6,14 +6,25 @@
     <meta name="description" content="Home"/>
     <meta name="author" content="Bram Sihotang"/>
     <link href="assets/css/style.css" rel="stylesheet"/>
-    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>About Me</title>
 </head>
 
 <body>
     <header class="primary">
         <h1>About Me</h1>
+        <p>Biography, Coursework, and Awards</p>
+        <nav class="primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ap.html">AP Coursework</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main id="about">
         <section id="biography">
             <header>
                 <h2>Biography</h2>
@@ -21,7 +32,7 @@
             <p>I am a British-wannabe and I spend 24 hours a day on my phone.</p>
             <footer></footer>
         </section>
-        <section>
+        <section id="education">
             <header>
                 <h2>Education</h2>
             </header>
@@ -31,13 +42,15 @@
                 <li>Bachelor of Science in Computer Science</li>
             </ul>
             <h3>David Hickman High School (Columbia, MO)</h3>
-            <p>High School Diploma, May 2025</p>
-            <p>GPA 4.2/4.0</p>
+            <ul>
+                <li>High School Diploma, May 2025</li>
+                <li>GPA 4.2/4.0</li>
+            </ul>
             <footer></footer>
         </section>
-        <section>
+        <section id="coursework">
             <header>
-                <h2>Significant Course Work</h2>
+                <h2>Significant Coursework</h2>
             </header>
             <ul>
                 <li>Placeholder #1</li>
@@ -45,7 +58,7 @@
             </ul>
             <footer></footer>
         </section>
-        <section>
+        <section id="awards">
             <header>
                 <h2>Honors and Awards</h2>
             </header>
@@ -60,7 +73,7 @@
             </ul>
             <footer></footer>
         </section>
-        <section>
+        <section id="languages">
             <header>
                 <h2>Languages</h2>
             </header>
@@ -72,6 +85,31 @@
             </ul>
             <footer></footer>
         </section>
+        <aside>
+            <h2 class="navigate">Navigate</h2>
+            <nav>
+                <ul>
+                    <li><a href="#current">Current Progress</a></li>
+                    <li><a href="#planned">Fall 2027 Plans</a></li>
+                    <li><a href="#leftover">Leftover Courses</a></li>
+                </ul>
+            </nav>
+        </aside>
     </main>
-    <footer></footer>
+    <footer class="primary">
+        <h4>CONTACT US</h4>
+        <ul>
+            <li>99 Brooklyn Willoughby Apt 100</li>
+            <li>New York City, NY, US</li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://youtube.com">YouTube</a></li>
+                <li><a href="https://reddit.com">Reddit</a></li>
+                <li><a href="https://discord.com">Discord</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
