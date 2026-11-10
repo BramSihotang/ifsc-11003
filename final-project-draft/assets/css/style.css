@@ -35,6 +35,10 @@ main#about {
         "footer footer footer footer" ;       
 }
 
+#wufoo-z1hww3ip0txxrt3 {
+    margin: 0 50px;
+}
+
 header.primary {
     text-align: center;
     background-color: #212d74;
@@ -170,7 +174,7 @@ td:nth-child(2) {
     justify-content:space-between;
     flex-wrap:wrap;
     gap:25px;
-    margin: 0 100px 20px 100px;
+    margin: 0 100px 50px 100px;
 }
 
 #ap-classes header {
@@ -200,9 +204,18 @@ td:nth-child(2) {
     background-color: #255A90;
 }
 
+#chemistry {
+    background-color: #279E91;
+}
+
+#calculus {
+    background-color: #5B6FA4;
+}
+
 section.textbox {
-    background: gray;
-    padding: 0 10px;
+    margin: 0 10px;
+    color: white;
+    text-align: center;
 }
 
 img {
