@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+
+main#index {
+    display: grid;
+    gap: 0px;
+    /*max-width: 80vw;*/
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+        "header header header header"
+        "current current current sidebar"
+        "planned planned planned sidebar"
+        "leftover leftover leftover sidebar"
+        "footer footer footer footer" ;       
+}
+
+main#about {
+    display: grid;
+    gap: 0px;
+    /*max-width: 80vw;*/
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+        "header header header header"
+        "biography biography biography sidebar"
+        "education education education sidebar"
+        "coursework coursework coursework sidebar"
+        "award award award sidebar"
+        "language language language sidebar"
+        "footer footer footer footer" ;       
+}
+
+#wufoo-z1hww3ip0txxrt3 {
+    margin: 0 50px;
+}
+
+header.primary {
+    text-align: center;
+    background-color: #212d74;
+    color: white;
+    padding: 25px;
+    grid-area: header;
+}
+
+header.primary nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+header.primary nav ul li {
+    list-style-type: none;
+}
+
+header.primary nav ul li a {
+    border-color: #d23369;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: black;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header.primary nav ul li a:hover {
+    color: gray;
+}
+
+h2 {
+    color: #2a3990;
+    border-bottom: 1px solid black;
+}
+
+h2.navigate {
+    border-style: none;
+}
+
+#index h3, #about h3 {
+    border-left: 5px #d23369 solid;
+    padding-left: 10px;
+}
+
+aside {
+    grid-area: sidebar;
+    padding-left: 20px;
+    padding-right: 50px;
+    background-color: lightgray;
+}
+
+aside nav ul {
+    padding: 0;
+}
+
+aside nav ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+aside nav ul li a {
+    color: black;
+}
+
+aside nav ul li a:hover {
+    color: #d23369;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+thead {
+    color: white;
+    background-color: #2a3990;
+    border: 1.5px solid #2a3990;
+}
+
+td {
+    border: 1.5px solid #d23369;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+#current{
+    grid-area: current;
+}
+
+#planned {
+    grid-area: planned;
+}
+
+#leftover {
+    grid-area: leftover;
+    padding-bottom: 20px;
+}
+
+#biography {
+    grid-area: biography;
+}
+
+#education {
+    grid-area: education;
+}
+
+#coursework {
+    grid-area: coursework;
+}
+
+#awards {
+    grid-area: award;
+}
+
+#languages {
+    grid-area: language;
+}
+
+#index section, #about section {
+    margin: 0 50px;
+}
+
+#ap-classes article header h3 {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#ap-classes {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:25px;
+    margin: 0 100px 50px 100px;
+}
+
+#ap-classes header {
+    flex: 0 0 100%;
+}
+
+#ap-classes article {
+    border: 1px solid black;
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.6);
+}
+
+#ap-classes article ul {
+    padding-left: 0;
+}
+
+#ap-classes article ul li {
+    list-style-type: none;
+}
+
+#ap-classes article figure {
+    text-align: center;
+}
+
+#physics {
+    background-color: #255A90;
+}
+
+#chemistry {
+    background-color: #279E91;
+}
+
+#calculus {
+    background-color: #5B6FA4;
+}
+
+section.textbox {
+    margin: 0 10px;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+}
+
+footer.primary {
+    background-color: #212d74;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
+
+footer.primary ul {
+    padding-left: 0;
+}
+
+footer.primary ul {
+    list-style-type: none;
+}
+
+footer.primary ul li a {
+    color: white;
+}
+
+footer.primary ul li a:hover {
+    color: #d23369;
+}
+
+@media screen and (max-width:500px) {
+    header.primary nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+}

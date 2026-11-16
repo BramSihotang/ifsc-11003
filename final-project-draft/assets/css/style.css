@@ -68,6 +68,10 @@ header.primary nav ul li a {
     color: white;
 }
 
+header.primary nav ul li a:hover {
+    color: gray;
+}
+
 h2 {
     color: #2a3990;
     border-bottom: 1px solid black;
@@ -244,4 +248,12 @@ footer.primary ul li a {
 
 footer.primary ul li a:hover {
     color: #d23369;
+}
+
+@media screen and (max-width:500px) {
+    header.primary nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
 }
